@@ -7,7 +7,7 @@ import WhyUsSection from "@/components/why-us/WhyUsSection";
 import Footer from "@/components/layout/Footer";
 import BackToTop from "@/components/layout/BackToTop";
 import MethodologySection from "@/components/methodology/MethodologySection";
-import TechInnovationBanner from "@/components/tech-innovation/TechInnovationBanner";
+// import TechInnovationBanner from "@/components/tech-innovation/TechInnovationBanner";
 import IndustriesSection from "@/components/industries/IndustriesSection";
 import ResourcesSection from "@/components/resources/ResourcesSection";
 import TeamSection from "@/components/team/TeamSection";
@@ -44,7 +44,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <StatsBar />
-      <TechInnovationBanner />
+      {/* <TechInnovationBanner /> */}
       <ServicesSection />
       <WhyUsSection />
       <MethodologySection />
