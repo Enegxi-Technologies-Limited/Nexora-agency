@@ -13,6 +13,7 @@ import ResourcesSection from "@/components/resources/ResourcesSection";
 import TeamSection from "@/components/team/TeamSection";
 import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
 import ContactSection from "@/components/contact/ContactSection";
+import { absoluteSiteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -20,21 +21,32 @@ export const metadata: Metadata = {
   },
   description:
     "Nexora Agency helps businesses, NGOs, and institutions turn strategy into execution — through project management, branding, digital solutions, and capacity training.",
+  alternates: {
+    canonical: absoluteSiteUrl("/"),
+  },
   openGraph: {
     title: "Nexora Agency",
     description:
       "We don't just plan — we execute. Strategy, software, and brand under one roof.",
-    url: process.env.NEXT_PUBLIC_SITE_URL,
+    url: absoluteSiteUrl("/"),
     siteName: "Nexora Agency",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: absoluteSiteUrl("/og-image.jpg"),
         width: 1200,
         height: 630,
+        alt: "Nexora Agency — Building Structure. Driving Growth. Delivering Impact.",
       },
     ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nexora Agency",
+    description:
+      "We don't just plan — we execute. Strategy, software, and brand under one roof.",
+    images: [absoluteSiteUrl("/og-image.jpg")],
   },
 };
 
